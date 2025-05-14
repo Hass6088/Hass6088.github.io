@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<title>Form</title>
+<style>
+    nav {
+			text-align: center;
+			background-color: whitesmoke;
+			padding: 20px;
+			font-family: 'Times New Roman', Times, serif;
+			font-size: large;
+			margin-right: 20px;
+			
+		}
+		nav a {
+			margin-right: 70px;
+			text-decoration: none;
+			color: black;
+		}
+    body {
+        background-color: white;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    fieldset {
+      border: 2px solid black;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      width: 75%;
+      height: 200px;
+      background-color: whitesmoke;
+    }
+    .submit-button {
+        background-color: lightgrey;
+    }
+    .reset-button {
+        background-color: lightgrey;
+    }
+</style>
+
+</head>
+
+
+
+<body>
+    <nav>
+		<a href="index.html"><b>About Me</b></a> &nbsp;
+		<a href="table.html"><b>My Experience</b></a> &nbsp;
+		<a href="form.html"><b>Programming Learning Survey</b></a> &nbsp;
+	</nav>
+<!--Your HTML tags will start here-->
+
+ <h1>If you learned to program how did you do it?</h1>
+
+<form>
+    <p>
+        <label for="first">First Name:</label>
+        <input type="text" name="first" id="first">
+    </p>
+    <p>
+        <label for="last">Last Name:</label>
+        <input type="text" name="last" id="last">
+    </p>
+    <p>
+        What is your strongest programming language?
+    </p>
+
+            <select name="software">
+                <option value="python">Python</option>
+                <option value="HTML/CSS">HTML/CSS</option>
+                <option value="javaScript">JavaScript</option>
+                <option value="Linux">Linux</option>
+            </select>
+    </p>
+    <p>
+    <fieldset>
+        <legend>What Method worked for you the most</legend>
+            <label><input type="radio" name="learningToCode" value="onlineCourses"> Online Courses</label>
+            <label><input type="radio" name="learningToCode" value="books"> Books</label>
+            <label><input type="radio" name="learningToCode" value="videos"> Tutorial Videos</label>
+            <label><input type="radio" name="learningToCode" value="bootcamps"> Coding Bootcamps</label>
+    </fieldset>
+    </p>
+    <label for="comments"></label>
+    <textarea id="comments" name="comments" placeholder="Enter your favorite thing you can do in that language?..."></textarea>
+    
+    <p>
+        <button type="submit" class="submit-button">Submit</button>
+        <button type="reset" class="reset-button">Reset</button>
+    </p>
+
+</form>
+
+</body>
+
+</html>
